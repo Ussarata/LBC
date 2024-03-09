@@ -16,7 +16,7 @@ const Hero = () => {
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.4}}
                 className="text-white mb-7 uppercase">
-                    Le <span className="text-orange">bois-Caïman</span> 
+                    Le <span className="text-orange">Bois-Caïman</span> 
                 </motion.h1>
                 <motion.p 
                 variants={fadeIn('down', 0.4)}
@@ -31,7 +31,7 @@ const Hero = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.1}}
-                className="text-white mb-12 max-w-lg mx-auto xl:max-w-none xl:mx-0">
+                className="hidden xl:flex text-white mb-12 max-w-lg mx-auto xl:max-w-none xl:mx-0">
                     Entreprise familiale de restauration traditionnelle haïtienne dédiée au spectacle vivant.
                 </motion.p>
             </div>
