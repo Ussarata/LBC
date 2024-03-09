@@ -13,10 +13,10 @@
         @apply font-lora font-bold;
     }
     h1 {
-        @apply text-[62px] leading-[84px];
+        @apply text-[48px] leading-[64px];
     }
     h2 {
-        @apply text-[32px] leading-[46px];
+        @apply text-[32px] leading-[42px];
     }
     h3 {
         @apply text-[20] leading-[30px];

@@ -54,7 +54,7 @@ const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
             className="cursor-pointer text-4xl text-white absolute w-10 h-10 left-8 top-8 bg-orange flex items-center justify-center"> 
             <IoCloseOutline />
           </div>
-          <h2 className="text-white mb-7 uppercase">Le <span className="text-orange">bois-Caïman</span> </h2>
+          <h3 className="text-white mb-7 uppercase">Le <span className="text-orange">bois-Caïman</span> </h3>
           <div className="flex flex-col gap-y-8">
             {links.map((link, index)=> {
               return ( 
