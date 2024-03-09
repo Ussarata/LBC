@@ -2,9 +2,10 @@
 import Image from "next/image";
 import {motion} from 'framer-motion';
 import { fadeIn } from "@/variants";
-import { Button } from "./ui/button";
+import { useMediaQuery } from '@chakra-ui/react';
 
 const Hero = () => {
+    const [isSmallScreen] = useMediaQuery('(max-width: 640px)');
   return (  
   <section className="bg-footer bg-no-repeat relative xl:bg-cover xl:h-[1098px] py-40 pb-32 xl:py-0" id="home">
     <div className="container mx-auto">
@@ -16,7 +17,7 @@ const Hero = () => {
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.4}}
                 className="text-white mb-7 uppercase">
-                    Le <span className="text-orange">Bois-Caïman</span> 
+                    Le {isSmallScreen && <br />} <span className="text-orange">Bois-Caïman</span> 
                 </motion.h1>
                 <motion.p 
                 variants={fadeIn('down', 0.4)}
